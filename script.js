@@ -18,3 +18,4 @@ function downloadInfografis() {
   link.href = "assets/infografis.png";
   link.download = "infografis.png";
   link.click();
+} 
