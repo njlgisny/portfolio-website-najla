@@ -29,8 +29,8 @@ body {
 }
 
 section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    min-height: 100svh;
+    padding: 12rem 9% 2rem;
 }
 
 /* HEADER */
@@ -965,6 +965,8 @@ span {
     .beranda {
         flex-direction: column;
         text-align: center;
+         min-height: auto;
+        padding-top: 14rem;
     }
     .beranda-content h3 {
         font-size: 2.6rem;
@@ -981,10 +983,13 @@ span {
         margin-left: 0;
     }
     .beranda-img img {
-        width: 65vw;
-        max-width: 320px;
+        width: 70vw;
+        max-width: 300px;
         height: auto;
-        margin-top: 0; 
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: 4rem;
     }
     .social-media {
         display: flex;
@@ -1008,10 +1013,18 @@ span {
     }
 }
 
+@media (max-width: 768px) {
+    .kontak-card,
+    .email-box {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
 @media (max-width: 671px) {
     .beranda-img img {
-        width: 70vw;
-        margin-top: 8rem;
+        width: 75vw;
+        margin-top: 5rem;
     }
     .profil-img img {
         width: 70vw;
